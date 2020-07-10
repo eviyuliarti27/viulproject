@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-12">
+    <span class="line-height-xs">
+      <h4 class="mat-card__title">Activity</h4>
+    </span>
+      <perfect-scrollbar (psYReachEnd)="scrollDown($event)" [ngStyle]="{ 'min-height': '425px', 'max-height': '425px' }" [config]="ps_config">
+        <div class="row" *ngFor="let p of data" [ngClass]="selected == p ? 'active' : ''" style="cursor: pointer;">
+          <div class="d-flex flex-item">
+            <!-- <div class=""> -->
+              <img data-toggle="tooltip" title="{{ p.name }}" src="{{ p.images }}" style="height: 100px;width: 150px;" class="img-fluid mb-3 mr-2" alt="">
+            <!-- </div> -->
+            <div class="m-0">
+              <p class="activity mb-0 text-justify">{{p.title }}</p>
+              <div class="position-relative mt-1">
+                <span class="float-left" style="font-size: 10px;">{{ p.name }}</span>
+                <span class="float-right mr-3" style="font-size: 10px;">{{ p.created_time }}</span>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </perfect-scrollbar>
+  </div>
+</div>

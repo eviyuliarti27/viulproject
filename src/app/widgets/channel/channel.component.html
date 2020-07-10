@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-12">
+    <h4 class="mat-card__title">Chanel</h4>
+      <perfect-scrollbar (psYReachEnd)="scrollDown($event)" [ngStyle]="{ 'min-height': '458px', 'max-height': '458px' }" [config]="ps_config">
+        <div class="flex-item w-50 d-inline-block" *ngFor="let p of data" style="overflow: hidden;cursor: pointer;">
+          <img data-toggle="tooltip" title="{{ p.name }}" src="{{ p.images }}" style="height: 100px;width: 150px;" class="img-fluid mb-2" alt="">
+        </div>
+      </perfect-scrollbar>
+  </div>
+</div>

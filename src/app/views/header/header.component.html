@@ -1,0 +1,29 @@
+  <nav class="navbar navbar-dark bg-dark mb-3">
+    <div class="col-md-12">
+    <div class="navbar-expand mr-auto navbar-nav">
+      <a class="navbar-brand" href="/">Social Network</a>
+      <input type="text" class="form-control m-1 p-1" type="search" #Keyword (keyup.enter)="search(Keyword.value)" placeholder="Search">
+        <span class="input-group-btn d-flex">
+          <button class="btn btn-default m-1 p-1" type="button" (click)="search(Keyword.value)"> 
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+          <button class="btn btn-default m-1 p-1" type="button" (click)="clickMe()"> upload </button>
+           <button class="btn btn-default m-1 p-1" type="button" (click)="clickMe()" > click me </button>
+        </span>
+    </div>   
+    </div>
+ 
+ <div class="col-md-12">
+	<div class="navbar-expand mr-auto">
+		<div class="navbar-nav">
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="/people">People</a>
+			<a class="nav-item nav-link" routerLinkActive="active" routerLink="/home">Video</a>
+			<a class="nav-item nav-link" routerLinkActive="active" routerLink="/document">Documents</a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="/event">Events</a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="/communities">Communities</a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="#">Favorites</a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="#">Channels</a>
+		</div>
+	</div>
+ </div>
+  </nav>

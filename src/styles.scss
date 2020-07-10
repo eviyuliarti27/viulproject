@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+// @import '~swiper/dist/css/swiper.min.css';
+
+.mat-card__title {
+    color: #464343;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 11px !important;
+    border-bottom: 2px solid #a3a2a2 !important;
+    padding-bottom: 2px !important;
+    padding-right: 1px !important;
+  
+  }

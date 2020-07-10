@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-md-12">
+    <h4 class="mat-card__title">Video</h4>
+    <div class="row">
+       <div class="col-sm-8">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+        </div>
+       </div>
+   
+       <!-- <div class="col-lg-4 col-md-4 col-sm-4">
+         <perfect-scrollbar (psYReachEnd)="scrollDown($event)" [ngStyle]="{ 'min-height': '309px', 'max-height': '309px' }" [config]="ps_config">
+             <div class="mb-3" *ngFor="let m of data" [ngClass]="(selected == m) ? 'active':''" (click)="selected = m"> 
+               <img src="{{ m.images}}" class="img-fluid" style="height: 150px;">
+             </div>
+         </perfect-scrollbar>
+       </div> -->
+
+        <!-- <div class="col-lg-4 col-md-4 col-sm-6 mb-2">
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half mb-2">
+          <div *ngFor="let m of data"> 
+            <video disablePictureInPicture controlsList="nodownload" class="video-fluid z-depth-1 embed-responsive-item" 
+            style="height:100%;width:100%;" controls>
+              <source src="{{m.link}}" type="video/mp4">
+                <i class="play icon"></i>
+            </video>
+        </div>
+        </div>
+      </div> -->
+      
+       <div class="col-sm-4">
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half mb-3">
+           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                 allowfullscreen></iframe>
+       </div>
+       <div class="embed-responsive embed-responsive-16by9 z-depth-1-half mb-3">
+           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+               allowfullscreen></iframe>
+       </div>
+     </div>
+
+       <div class="col-md-12">
+        <swiper class="swiper-container" [config]="config">
+          <div class="swiper-slide" style="overflow: hidden" *ngFor="let t of data">
+            <div class="row mt-3"> 
+              <img src="{{ t.images}}" class="img-fluid">
+          </div>
+          </div>
+        </swiper>
+      </div>
+
+     </div>
+  </div>
+</div>
